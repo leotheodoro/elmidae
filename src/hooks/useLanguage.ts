@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 
+import { TranslationKeys, translations } from '@/lib/dictionary/translations'
+
 const LOCAL_STORAGE_LANGUAGE_KEY = '@elmidae/language'
 
-type Language = 'pt-BR' | 'en'
+export type Language = 'pt-BR' | 'en'
 
 export const useLanguage = () => {
   const [language, setLanguage] = useState<Language>('pt-BR')
@@ -22,5 +24,9 @@ export const useLanguage = () => {
     localStorage.setItem(LOCAL_STORAGE_LANGUAGE_KEY, lang)
   }
 
-  return { language, changeLanguage }
+  const getTranslation = (key: keyof TranslationKeys): string => {
+    return translations[language][key]
+  }
+
+  return { language, changeLanguage, getTranslation }
 }

@@ -10,8 +10,6 @@ import {
 export function LanguageSwitcher() {
   const { language, changeLanguage } = useLanguageContext()
 
-  console.log({ language })
-
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>

@@ -1,7 +1,10 @@
+'use client'
+
 import Image from 'next/image'
 
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+import { useLanguageContext } from '@/contexts/language-context'
 
 import citiesImg from '../../assets/cities.jpg'
 
@@ -17,29 +20,24 @@ const cities = [
 ]
 
 export default function Introduction() {
+  const { getTranslation } = useLanguageContext()
+
   return (
     <main className="py-10">
       <Tabs defaultValue="introduction">
         <TabsList className="grid w-full grid-cols-2">
-          <TabsTrigger value="introduction">Introdução</TabsTrigger>
-          <TabsTrigger value="cities">Municípios de Estudo</TabsTrigger>
+          <TabsTrigger value="introduction">
+            {getTranslation('introduction')}
+          </TabsTrigger>
+          <TabsTrigger value="cities">
+            {getTranslation('studyRegions')}
+          </TabsTrigger>
         </TabsList>
         <TabsContent value="introduction">
-          <p>
-            Este projeto, AutoElmID, faz parte da dissertação de mestrado do
-            aluno Eduardo Rodrigo Viana Mallet - Engenheiro Ambiental,
-            desenvolvido em parceria com Leonardo Theodoro - Developer, a
-            Universidade Estadual do Centro-Oeste e a Senckenberg Entomological
-            Institute, sob a supervisão dos professores doutores Elynton Alves
-            do Nascimento e Vinícius Ferreira.
-          </p>
+          <p>{getTranslation('introductionDescription')}</p>
         </TabsContent>
-        <TabsContent value="cities">
-          <p>
-            Atualmente, o banco de dados concentra-se nas espécies de Elmidae
-            encontradas nas regiões Centro-Sul e Sudeste do Paraná, que servem
-            como base para este estudo.
-          </p>
+        <TabsContent value="cities" className="flex flex-col items-center">
+          <p>{getTranslation('studyRegionsDescription')}</p>
 
           <Image src={citiesImg} alt="" width={500} />
 
@@ -47,7 +45,7 @@ export default function Introduction() {
             <TableBody>
               {cities.map((city) => {
                 return (
-                  <TableRow key={city}>
+                  <TableRow key={city} className="text-center">
                     <TableCell>{city}</TableCell>
                   </TableRow>
                 )

@@ -1,11 +1,13 @@
-// contexts/LanguageContext.tsx
 import React, { createContext, ReactNode, useContext } from 'react'
+
+import { TranslationKeys } from '@/lib/dictionary/translations'
 
 import { useLanguage } from '../hooks/useLanguage'
 
 type LanguageContextType = {
   language: 'pt-BR' | 'en'
   changeLanguage: (lang: 'pt-BR' | 'en') => void
+  getTranslation: (key: keyof TranslationKeys) => string
 }
 
 const LanguageContext = createContext<LanguageContextType | undefined>(
