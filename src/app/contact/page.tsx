@@ -11,7 +11,7 @@ export default function Contact() {
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
             <AvatarFallback>EM</AvatarFallback>
-            <AvatarImage src="https://github.com/leotheodoro.png" />
+            <AvatarImage src="" />
           </Avatar>
           <h3 className="font-semibold text-foreground">Eduardo Mallet</h3>
           <span className="text-sm text-muted-foreground">
@@ -19,64 +19,78 @@ export default function Contact() {
           </span>
           <div>
             <Button size={'icon'} variant={'ghost'}>
-              <LinkedinIcon />
+              <a
+                href="https://www.linkedin.com/in/eduardo-mallet-114567212"
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </a>
             </Button>
             <Button size={'icon'} variant={'ghost'}>
-              <Mail />
+              <a href="mailto:eng_mallet@outlook.com">
+                <Mail />
+              </a>
             </Button>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
-            <AvatarFallback>EM</AvatarFallback>
-            <AvatarImage src="https://github.com/leotheodoro.png" />
+            <AvatarFallback>EA</AvatarFallback>
+            <AvatarImage src="" />
           </Avatar>
-          <h3 className="font-semibold text-foreground">Eduardo Mallet</h3>
+          <h3 className="font-semibold text-foreground">
+            Elynton Alves do Nascimento
+          </h3>
           <span className="text-sm text-muted-foreground">
             Engenheiro Ambiental
           </span>
           <div>
             <Button size={'icon'} variant={'ghost'}>
-              <LinkedinIcon />
-            </Button>
-            <Button size={'icon'} variant={'ghost'}>
-              <Mail />
+              <a href="mailto:elynton@gmail.com">
+                <Mail />
+              </a>
             </Button>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
-            <AvatarFallback>EM</AvatarFallback>
-            <AvatarImage src="https://github.com/leotheodoro.png" />
+            <AvatarFallback>VF</AvatarFallback>
+            <AvatarImage src="/assets/contact/vinicius_ferreira.png" />
           </Avatar>
-          <h3 className="font-semibold text-foreground">Eduardo Mallet</h3>
+          <h3 className="font-semibold text-foreground">
+            Vinicius Ferreira de Souza
+          </h3>
           <span className="text-sm text-muted-foreground">
             Engenheiro Ambiental
           </span>
           <div>
             <Button size={'icon'} variant={'ghost'}>
-              <LinkedinIcon />
+              <a href="https://cantharoid.com/" target="_blank">
+                <Link />
+              </a>
             </Button>
             <Button size={'icon'} variant={'ghost'}>
-              <Mail />
+              <a href="mailto:vinicius.ferreira@senckenberg.de">
+                <Mail />
+              </a>
             </Button>
           </div>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
-            <AvatarFallback>EM</AvatarFallback>
+            <AvatarFallback>LT</AvatarFallback>
             <AvatarImage src="https://github.com/leotheodoro.png" />
           </Avatar>
-          <h3 className="font-semibold text-foreground">Eduardo Mallet</h3>
-          <span className="text-sm text-muted-foreground">
-            Engenheiro Ambiental
-          </span>
+          <h3 className="font-semibold text-foreground">Leonardo Theodoro</h3>
+          <span className="text-sm text-muted-foreground">Desenvolvedor</span>
           <div>
             <Button size={'icon'} variant={'ghost'}>
-              <LinkedinIcon />
-            </Button>
-            <Button size={'icon'} variant={'ghost'}>
-              <Mail />
+              <a
+                href="https://www.linkedin.com/in/leonardo-theodoro/"
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </a>
             </Button>
           </div>
         </div>
