@@ -7,7 +7,7 @@ import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
 import { useLanguageContext } from '@/contexts/language-context'
 
-import introductionImg from '../assets/introduction.png'
+import introductionImg from '../assets/introduction.jpg'
 import introductionEnImg from '../assets/introduction_en.jpg'
 
 export default function Home() {

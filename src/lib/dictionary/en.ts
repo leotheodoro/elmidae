@@ -44,4 +44,7 @@ export const en = {
   developedBy: 'Developed by',
   and: 'and',
   allRightsReserved: 'All rights reserved',
+  trainingGeneraTitle: 'Genera Used in Training',
+  trainingGeneraDescription:
+    'Visual representation of the Elmidae genera used in training the machine learning model.',
 }

@@ -44,4 +44,7 @@ export const ptBR = {
   developedBy: 'Desenvolvido por',
   and: 'e',
   allRightsReserved: 'Todos os direitos reservados',
+  trainingGeneraTitle: 'Gêneros Utilizados no Treinamento',
+  trainingGeneraDescription:
+    'Visualização dos gêneros de Elmidae utilizados no treinamento do modelo de aprendizado de máquina.',
 }

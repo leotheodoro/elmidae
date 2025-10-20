@@ -156,14 +156,6 @@ export default function Contact() {
           </AlertTitle>
           <AlertDescription className="mt-2 flex flex-col items-center gap-4">
             <p className="text-center">{getTranslation('contactWarning')}</p>
-            <div className="flex gap-2">
-              <Button size="icon" variant="outline">
-                <Link className="h-5 w-5" />
-              </Button>
-              <Button size="icon" variant="outline">
-                <Mail className="h-5 w-5" />
-              </Button>
-            </div>
           </AlertDescription>
         </Alert>
       </div>

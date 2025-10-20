@@ -10,6 +10,7 @@ import { useLanguageContext } from '@/contexts/language-context'
 import logoImg from '../assets/elmidae_logo.png'
 import { LanguageSwitcher } from './language-switcher'
 import { NavLink } from './nav-link'
+import { ThemeSwitcher } from './theme-switcher'
 import { Button } from './ui/button'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 
@@ -57,6 +58,7 @@ export function Header() {
 
         {/* Right side */}
         <div className="flex items-center gap-4">
+          <ThemeSwitcher />
           <LanguageSwitcher />
 
           {/* Mobile Menu */}
@@ -91,6 +93,9 @@ export function Header() {
                     {link.label}
                   </NavLink>
                 ))}
+                <div className="mt-4 flex items-center justify-center gap-4 border-t pt-4">
+                  <ThemeSwitcher />
+                </div>
               </div>
             </SheetContent>
           </Sheet>
