@@ -1,6 +1,6 @@
 'use client'
 
-import { Link, LinkedinIcon, Mail } from 'lucide-react'
+import { Instagram, Link, LinkedinIcon, Mail } from 'lucide-react'
 
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
@@ -12,7 +12,7 @@ export default function Contact() {
 
   return (
     <main className="py-10">
-      <div className="grid grid-cols-4">
+      <div className="grid grid-cols-3">
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
             <AvatarFallback>EM</AvatarFallback>
@@ -51,6 +51,14 @@ export default function Contact() {
           </span>
           <div>
             <Button size={'icon'} variant={'ghost'}>
+              <a
+                href="hhttps://collectory.sibbr.gov.br/collectory/public/show/co464 "
+                target="_blank"
+              >
+                <Link />
+              </a>
+            </Button>
+            <Button size={'icon'} variant={'ghost'}>
               <a href="mailto:elynton@gmail.com">
                 <Mail />
               </a>
@@ -81,6 +89,9 @@ export default function Contact() {
             </Button>
           </div>
         </div>
+      </div>
+
+      <div className="grid grid-cols-2 pt-10">
         <div className="flex flex-col items-center justify-center">
           <Avatar className="h-24 w-24">
             <AvatarFallback>LT</AvatarFallback>
@@ -99,10 +110,34 @@ export default function Contact() {
                 <LinkedinIcon />
               </a>
             </Button>
+            <Button size={'icon'} variant={'ghost'}>
+              <a href="https:/instagram.com/leeootheodoro" target="_blank">
+                <Instagram />
+              </a>
+            </Button>
+          </div>
+        </div>
+        <div className="flex flex-col items-center justify-center">
+          <Avatar className="h-24 w-24">
+            <AvatarFallback>NC</AvatarFallback>
+            <AvatarImage src="/assets/contact/nathan.jpeg" />
+          </Avatar>
+          <h3 className="font-semibold text-foreground">Nathan Camolez</h3>
+          <span className="text-sm text-muted-foreground">
+            {getTranslation('developer')}
+          </span>
+          <div>
+            <Button size={'icon'} variant={'ghost'}>
+              <a
+                href="https://www.linkedin.com/in/nathancamolez/"
+                target="_blank"
+              >
+                <LinkedinIcon />
+              </a>
+            </Button>
           </div>
         </div>
       </div>
-
       <Alert className="mx-auto mt-10 max-w-[680px]">
         <AlertTitle>{getTranslation('warning')}!</AlertTitle>
         <AlertDescription className="flex flex-col items-center justify-center">

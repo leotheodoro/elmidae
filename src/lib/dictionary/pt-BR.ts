@@ -24,7 +24,7 @@ export const ptBR = {
   developer: 'Desenvolvedor',
   environmentalEngineer: 'Engenheiro Ambiental',
   viniciusDescription:
-    'Entomologista - Chefe de Coleoptera no Instituto Entomológico Alemão Senckenberg',
+    'Entomologista - Curador e Chefe da Seção de Coleoptera no Instituto Entomológico Alemão Senckenberg',
   elytonDescription:
     'Entomologista - Professor do Departamento de Engenharia Ambiental - UNICENTRO',
 }
