@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     template: `%s | Elmidae`,
   },
   description: '',
+  icons: {
+    icon: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
     title: `Elmidae`,
     description: '',
@@ -56,7 +60,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className={cn(fontSans.variable)}>
-        <div className="mx-auto min-h-screen w-full max-w-[1280px] border-x bg-background px-3 font-sans antialiased">
+        <div className="mx-auto min-h-screen w-full max-w-[1280px] bg-background px-3 font-sans antialiased">
           <Providers>{children}</Providers>
         </div>
       </body>

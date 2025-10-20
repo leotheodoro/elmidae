@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 
+import { ImageModal } from '@/components/image-modal'
 import { Table, TableBody, TableCell, TableRow } from '@/components/ui/table'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 import { useLanguageContext } from '@/contexts/language-context'
@@ -39,7 +40,25 @@ export default function Introduction() {
         <TabsContent value="cities" className="flex flex-col items-center">
           <p>{getTranslation('studyRegionsDescription')}</p>
 
-          <Image src={citiesImg} alt="" width={500} />
+          <ImageModal
+            src={citiesImg}
+            alt="Study regions map"
+            trigger={
+              <div className="group relative">
+                <Image
+                  src={citiesImg}
+                  alt="Study regions map"
+                  width={500}
+                  className="rounded-lg border shadow-sm transition-all hover:shadow-lg"
+                />
+                <div className="absolute inset-0 flex items-center justify-center rounded-lg bg-black/0 transition-all group-hover:bg-black/10">
+                  <span className="text-sm font-medium text-white opacity-0 transition-opacity group-hover:opacity-100">
+                    Click to enlarge
+                  </span>
+                </div>
+              </div>
+            }
+          />
 
           <Table className="mt-4">
             <TableBody>

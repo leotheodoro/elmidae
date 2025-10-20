@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import { useLanguageContext } from '@/contexts/language-context'
 
-import logoImg from '../assets/elmid_logo.png'
+import logoImg from '../assets/elmidae_logo.png'
 import { LanguageSwitcher } from './language-switcher'
 import { NavLink } from './nav-link'
 import { Button } from './ui/button'
