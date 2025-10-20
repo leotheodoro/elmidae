@@ -61,7 +61,7 @@ export function ImageModal({ src, alt, trigger }: ImageModalProps) {
       </div>
 
       <DialogContent
-        className="max-w-[95vw] max-h-[95vh] p-0 [&>button]:hidden"
+        className="max-h-[95vh] max-w-[95vw] p-0 [&>button]:hidden"
         onInteractOutside={handleClose}
       >
         <DialogTitle className="sr-only">{alt}</DialogTitle>
@@ -126,4 +126,3 @@ export function ImageModal({ src, alt, trigger }: ImageModalProps) {
     </Dialog>
   )
 }
-

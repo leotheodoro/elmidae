@@ -59,8 +59,13 @@ export default function RootLayout({
 }>) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={cn(fontSans.variable)}>
-        <div className="mx-auto min-h-screen w-full max-w-[1280px] bg-background px-3 font-sans antialiased">
+      <body
+        className={cn(
+          fontSans.variable,
+          'min-h-screen bg-background font-sans antialiased',
+        )}
+      >
+        <div className="flex min-h-screen flex-col">
           <Providers>{children}</Providers>
         </div>
       </body>
