@@ -47,4 +47,28 @@ export const en = {
   trainingGeneraTitle: 'Genera Used in Training',
   trainingGeneraDescription:
     'Visual representation of the Elmidae genera used in training the machine learning model.',
+  // Upload feature translations
+  previewImageTitle: 'Image Preview',
+  previewImageDescription: 'Review your image before submitting',
+  submitUpload: 'Submit Image',
+  cancel: 'Cancel',
+  uploading: 'Uploading image...',
+  uploadSuccess: 'Image uploaded successfully!',
+  uploadError: 'Upload error',
+  uploadErrorDescription:
+    'An error occurred while uploading the image. Please try again.',
+  fileValidationError: 'Invalid file',
+  fileTooLarge: 'File is too large. Maximum allowed size: 10MB',
+  invalidFileType: 'Invalid file type. Please select an image.',
+  selectFile: 'Select file',
+  // Prediction results
+  predictionResults: 'Identification Results',
+  identifiedGenus: 'Identified Genus',
+  confidenceLevel: 'Confidence Level',
+  fullClassification: 'Full Classification',
+  lowConfidenceError: 'Image not recognized',
+  lowConfidenceDescription:
+    'The identification confidence is too low. The uploaded image may not be an Elmidae beetle or the image quality may be inadequate. Please try with another image.',
+  uploadAnother: 'Upload Another Image',
+  close: 'Close',
 }

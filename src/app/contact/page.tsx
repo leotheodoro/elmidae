@@ -56,7 +56,7 @@ export default function Contact() {
       ],
     },
     {
-      name: 'Vinicius Ferreira de Souza',
+      name: 'Vinicius S. Ferreira',
       role: 'viniciusDescription',
       avatar: '/assets/contact/vinicius_ferreira.png',
       fallback: 'VF',

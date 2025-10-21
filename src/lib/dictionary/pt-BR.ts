@@ -47,4 +47,28 @@ export const ptBR = {
   trainingGeneraTitle: 'Gêneros Utilizados no Treinamento',
   trainingGeneraDescription:
     'Visualização dos gêneros de Elmidae utilizados no treinamento do modelo de aprendizado de máquina.',
+  // Upload feature translations
+  previewImageTitle: 'Prévia da Imagem',
+  previewImageDescription: 'Revise sua imagem antes de enviar',
+  submitUpload: 'Enviar Imagem',
+  cancel: 'Cancelar',
+  uploading: 'Enviando imagem...',
+  uploadSuccess: 'Imagem enviada com sucesso!',
+  uploadError: 'Erro ao enviar imagem',
+  uploadErrorDescription:
+    'Ocorreu um erro ao fazer upload da imagem. Por favor, tente novamente.',
+  fileValidationError: 'Arquivo inválido',
+  fileTooLarge: 'O arquivo é muito grande. Tamanho máximo permitido: 10MB',
+  invalidFileType: 'Tipo de arquivo inválido. Por favor, selecione uma imagem.',
+  selectFile: 'Selecionar arquivo',
+  // Prediction results
+  predictionResults: 'Resultados da Identificação',
+  identifiedGenus: 'Gênero Identificado',
+  confidenceLevel: 'Nível de Confiança',
+  fullClassification: 'Classificação Completa',
+  lowConfidenceError: 'Imagem não reconhecida',
+  lowConfidenceDescription:
+    'A confiança da identificação é muito baixa. A imagem enviada pode não ser um besouro Elmidae ou a qualidade da imagem pode estar inadequada. Por favor, tente com outra imagem.',
+  uploadAnother: 'Enviar Outra Imagem',
+  close: 'Fechar',
 }
