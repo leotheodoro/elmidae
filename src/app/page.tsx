@@ -9,8 +9,8 @@ import { useLanguageContext } from '@/contexts/language-context'
 import { useThemeContext } from '@/contexts/theme-context'
 
 import introductionImg from '../assets/introduction.png'
-import introductionDarkImg from '../assets/introduction_dark.png'
-import introductionDarkEnImg from '../assets/introduction_dark_en.png'
+import introductionDarkImg from '../assets/introduction_darker.png'
+import introductionDarkEnImg from '../assets/introduction_darker_en.png'
 import introductionEnImg from '../assets/introduction_en.png'
 
 export default function Home() {
