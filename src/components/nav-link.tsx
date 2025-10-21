@@ -11,7 +11,5 @@ export function NavLink(props: NavLinkProps) {
 
   const isCurrent = props.href.toString() === pathname
 
-  console.log({ pathname, href: props.href.toString(), isCurrent })
-
   return <Link data-current={isCurrent} {...props}></Link>
 }

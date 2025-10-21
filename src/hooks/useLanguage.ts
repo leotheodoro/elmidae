@@ -19,7 +19,6 @@ export const useLanguage = () => {
   }, [])
 
   const changeLanguage = (lang: Language) => {
-    console.log({ lang })
     setLanguage(lang)
     localStorage.setItem(LOCAL_STORAGE_LANGUAGE_KEY, lang)
   }
