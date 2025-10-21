@@ -1,13 +1,12 @@
 'use client'
 
 import { Menu, X } from 'lucide-react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { useState } from 'react'
 
 import { useLanguageContext } from '@/contexts/language-context'
 
-import logoImg from '../assets/elmidae_logo.png'
+import { ElmidaeLogo } from './elmidae-logo'
 import { LanguageSwitcher } from './language-switcher'
 import { NavLink } from './nav-link'
 import { ThemeSwitcher } from './theme-switcher'
@@ -33,13 +32,7 @@ export function Header() {
           href="/"
           className="flex items-center gap-3 transition-opacity hover:opacity-80"
         >
-          <Image
-            src={logoImg}
-            alt="Elmidae Logo"
-            height={50}
-            width={50}
-            className="h-12 w-auto"
-          />
+          <ElmidaeLogo size={48} />
           <span className="text-xl font-semibold tracking-tight">Elmidae</span>
         </Link>
 
@@ -75,13 +68,8 @@ export function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col gap-4 py-8">
                 <div className="mb-4 flex items-center gap-3 border-b pb-4">
-                  <Image
-                    src={logoImg}
-                    alt="Elmidae Logo"
-                    height={40}
-                    width={40}
-                  />
-                  Elmidae
+                  <ElmidaeLogo size={40} />
+                  <span className="font-semibold">Elmidae</span>
                 </div>
                 {navLinks.map((link) => (
                   <NavLink

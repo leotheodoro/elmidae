@@ -6,12 +6,24 @@ import Image from 'next/image'
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert'
 import { Button } from '@/components/ui/button'
 import { useLanguageContext } from '@/contexts/language-context'
+import { useThemeContext } from '@/contexts/theme-context'
 
-import introductionImg from '../assets/introduction.jpg'
-import introductionEnImg from '../assets/introduction_en.jpg'
+import introductionImg from '../assets/introduction.png'
+import introductionDarkImg from '../assets/introduction_dark.png'
+import introductionDarkEnImg from '../assets/introduction_dark_en.png'
+import introductionEnImg from '../assets/introduction_en.png'
 
 export default function Home() {
   const { getTranslation, language } = useLanguageContext()
+  const { theme } = useThemeContext()
+
+  // Select the correct image based on theme and language
+  const getIntroductionImage = () => {
+    if (theme === 'dark') {
+      return language === 'pt-BR' ? introductionDarkImg : introductionDarkEnImg
+    }
+    return language === 'pt-BR' ? introductionImg : introductionEnImg
+  }
 
   return (
     <main className="flex-1">
@@ -30,7 +42,7 @@ export default function Home() {
           {/* Diagram Image */}
           <div className="mb-12">
             <Image
-              src={language === 'pt-BR' ? introductionImg : introductionEnImg}
+              src={getIntroductionImage()}
               alt="Elmidae Workflow"
               width={1000}
               height={600}
