@@ -15,9 +15,9 @@ export const en = {
   homeWarning:
     'This is a pilot project. Currently, the database consists only of Elmidae found in the South-Central and Southeastern regions of Paraná.',
   introductionDescription:
-    "This project, Elmidae, is part of the master's thesis of Eduardo Rodrigo Viana Mallet - Environmental Engineer, developed in partnership with Leonardo Theodoro - Developer, the State University of the Midwest, and the Senckenberg Entomological Institute, under the supervision of Professors Dr. Elynton Alves do Nascimento and Dr. Vinícius Ferreira.",
+    "This project, Elmidae, is part of the master's thesis of Eduardo Rodrigo Viana Mallet - Environmental Engineer, developed in partnership with Leonardo Theodoro - Developer and Nathan Camolez - Developer, the State University of the Midwest, and the Senckenberg Entomological Institute, under the supervision of Professors Dr. Elynton Alves do Nascimento and Dr. Vinícius Ferreira.",
   datasetDescription:
-    'This dataset was used to train the machine learning model using the TensorFlow library, involving XX Elmidae genera. Below is a complete list of all taxa included in the study, along with their respective information.',
+    'The dataset used to train the machine learning model, developed using the TensorFlow library, consisted of representatives from six genera of the Elmidae family. Below is the complete list of taxa included in the study, along with their respective information.\n\nIn total, 88 individuals belonging to the Elmidae family were analyzed, distributed across 13 distinct species and six genera, which demonstrates the significant diversity of the group in the sampled areas. The identified species include Cylloepus alcine, Cylloepus carinulus, Cylloepus friburguensis, Cylloepus kodadai, Hexacylloepus geiseri, Heterelmis limnoides, Heterelmis debilis, Heterelmis sp., Neoelmis nicon, Spanglerelmis xirirca, Microcylloepus granosus, Microcylloepus longipes, and Microcylloepus pumilus. The recorded genera were Cylloepus, Hexacylloepus, Heterelmis, Neoelmis, Spanglerelmis, and Microcylloepus.',
   taxa: 'Taxa',
   contactWarning:
     'If you have material related to the Elmidae family that can be added to the database, please get in touch!',
