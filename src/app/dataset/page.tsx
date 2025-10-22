@@ -1,6 +1,6 @@
 'use client'
 
-import { Database, Download, Folder } from 'lucide-react'
+import { Download } from 'lucide-react'
 import Image from 'next/image'
 
 import { ImageModal } from '@/components/image-modal'
@@ -28,43 +28,23 @@ export default function Dataset() {
             </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
-            <Card className="transition-shadow hover:shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Database className="h-5 w-5 text-primary" />
-                  {getTranslation('trainingData')}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-sm text-muted-foreground">
-                  {getTranslation('trainingDataDescription')}
-                </p>
-                <Button className="w-full gap-2" variant="default" disabled>
-                  <Folder className="h-4 w-4" />
-                  {getTranslation('dataset')}
-                </Button>
-              </CardContent>
-            </Card>
-
-            <Card className="transition-shadow hover:shadow-lg">
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Download className="h-5 w-5 text-primary" />
-                  {getTranslation('downloadDataset')}
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="mb-4 text-sm text-muted-foreground">
-                  {getTranslation('downloadDatasetDescription')}
-                </p>
-                <Button className="w-full gap-2" variant="outline" disabled>
-                  <Download className="h-4 w-4" />
-                  {getTranslation('download')}
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+          <Card className="transition-shadow hover:shadow-lg">
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2">
+                <Download className="h-5 w-5 text-primary" />
+                {getTranslation('downloadDataset')}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="mb-4 text-sm text-muted-foreground">
+                {getTranslation('downloadDatasetDescription')}
+              </p>
+              <Button className="w-full gap-2" variant="default" disabled>
+                <Download className="h-4 w-4" />
+                {getTranslation('download')}
+              </Button>
+            </CardContent>
+          </Card>
 
           <div className="mt-8 rounded-lg border bg-muted/50 p-6">
             <h3 className="mb-2 font-semibold">
