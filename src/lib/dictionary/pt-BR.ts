@@ -37,6 +37,14 @@ export const ptBR = {
   downloadDatasetDescription:
     'Baixe o conjunto de dados em vários formatos para fins de pesquisa.',
   download: 'Baixar',
+  githubRepository: 'Repositório GitHub',
+  githubRepositoryDescription:
+    'Acesse o código-fonte completo e a implementação do modelo de aprendizado de máquina.',
+  viewOnGithub: 'Ver no GitHub',
+  imageDataset: 'Dataset de Imagens',
+  imageDatasetDescription:
+    'Acesse o conjunto completo de imagens utilizado para o treinamento do modelo de aprendizado de máquina.',
+  viewDataset: 'Ver Dataset',
   aboutDataset: 'Sobre o Dataset',
   aboutDatasetDescription:
     'Este conjunto de dados contém imagens e metadados de espécimes de Elmidae coletados em vários locais do Paraná, Brasil. Todos os dados foram cuidadosamente curados e anotados para fins de aprendizado de máquina.',

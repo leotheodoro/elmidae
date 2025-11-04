@@ -37,6 +37,14 @@ export const en = {
   downloadDatasetDescription:
     'Download the dataset in various formats for research purposes.',
   download: 'Download',
+  githubRepository: 'GitHub Repository',
+  githubRepositoryDescription:
+    'Access the complete source code and machine learning model implementation.',
+  viewOnGithub: 'View on GitHub',
+  imageDataset: 'Image Dataset',
+  imageDatasetDescription:
+    'Access the complete image dataset used for training the machine learning model.',
+  viewDataset: 'View Dataset',
   aboutDataset: 'About the Dataset',
   aboutDatasetDescription:
     'This dataset contains images and metadata of Elmidae specimens collected from various locations in Paraná, Brazil. All data has been carefully curated and annotated for machine learning purposes.',

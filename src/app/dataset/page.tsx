@@ -1,6 +1,6 @@
 'use client'
 
-import { Download } from 'lucide-react'
+import { Download, Github, Images } from 'lucide-react'
 import Image from 'next/image'
 
 import { ImageModal } from '@/components/image-modal'
@@ -28,23 +28,55 @@ export default function Dataset() {
             </div>
           </div>
 
-          <Card className="transition-shadow hover:shadow-lg">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
-                <Download className="h-5 w-5 text-primary" />
-                {getTranslation('downloadDataset')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="mb-4 text-sm text-muted-foreground">
-                {getTranslation('downloadDatasetDescription')}
-              </p>
-              <Button className="w-full gap-2" variant="default" disabled>
-                <Download className="h-4 w-4" />
-                {getTranslation('download')}
-              </Button>
-            </CardContent>
-          </Card>
+          <div className="grid gap-6 md:grid-cols-2">
+            <Card className="transition-shadow hover:shadow-lg">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Github className="h-5 w-5 text-primary" />
+                  {getTranslation('githubRepository')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  {getTranslation('githubRepositoryDescription')}
+                </p>
+                <Button className="w-full gap-2" variant="default" asChild>
+                  <a
+                    href="https://github.com/leotheodoro/elmidae-ml"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Github className="h-4 w-4" />
+                    {getTranslation('viewOnGithub')}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="transition-shadow hover:shadow-lg">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <Images className="h-5 w-5 text-primary" />
+                  {getTranslation('imageDataset')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  {getTranslation('imageDatasetDescription')}
+                </p>
+                <Button className="w-full gap-2" variant="default" asChild>
+                  <a
+                    href="https://drive.google.com/drive/folders/1u7DyQ0XsUjhyoXtX-JIvEY17nxpAG0n8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Download className="h-4 w-4" />
+                    {getTranslation('viewDataset')}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
 
           <div className="mt-8 rounded-lg border bg-muted/50 p-6">
             <h3 className="mb-2 font-semibold">
