@@ -45,6 +45,12 @@ export const en = {
   imageDatasetDescription:
     'Access the complete image dataset used for training the machine learning model.',
   viewDataset: 'View Dataset',
+  molecularData: 'COI Gene',
+  molecularDataDescription1:
+    'For scientific rigor and reliability, this spreadsheet displays only the COI gene sequences considered valid.',
+  molecularDataDescription2:
+    'All samples that resulted in reading errors, low data quality, or evidence of contamination were excluded from the final dataset, ensuring the accuracy of molecular identification.',
+  viewSpreadsheet: 'View Spreadsheet',
   aboutDataset: 'About the Dataset',
   aboutDatasetDescription:
     'This dataset contains images and metadata of Elmidae specimens collected from various locations in Paraná, Brazil. All data has been carefully curated and annotated for machine learning purposes.',

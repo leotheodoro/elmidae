@@ -1,6 +1,6 @@
 'use client'
 
-import { Download, Github, Images } from 'lucide-react'
+import { Download, FileSpreadsheet, Github, Images } from 'lucide-react'
 import Image from 'next/image'
 
 import { ImageModal } from '@/components/image-modal'
@@ -28,7 +28,7 @@ export default function Dataset() {
             </div>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card className="transition-shadow hover:shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
@@ -72,6 +72,33 @@ export default function Dataset() {
                   >
                     <Download className="h-4 w-4" />
                     {getTranslation('viewDataset')}
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="transition-shadow hover:shadow-lg">
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <FileSpreadsheet className="h-5 w-5 text-primary" />
+                  {getTranslation('molecularData')}
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="mb-2 text-sm text-muted-foreground">
+                  {getTranslation('molecularDataDescription1')}
+                </p>
+                <p className="mb-4 text-sm text-muted-foreground">
+                  {getTranslation('molecularDataDescription2')}
+                </p>
+                <Button className="w-full gap-2" variant="default" asChild>
+                  <a
+                    href="https://docs.google.com/spreadsheets/d/1gRPC_O346cblkff2fky_6gKUhJ9Tt7jY/edit?usp=sharing&ouid=106082570214290973064&rtpof=true&sd=true"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FileSpreadsheet className="h-4 w-4" />
+                    {getTranslation('viewSpreadsheet')}
                   </a>
                 </Button>
               </CardContent>

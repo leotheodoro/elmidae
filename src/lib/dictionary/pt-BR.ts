@@ -45,6 +45,12 @@ export const ptBR = {
   imageDatasetDescription:
     'Acesse o conjunto completo de imagens utilizado para o treinamento do modelo de aprendizado de máquina.',
   viewDataset: 'Ver Dataset',
+  molecularData: 'Gene COI',
+  molecularDataDescription1:
+    'Por uma questão de rigor científico e confiabilidade, esta tabela exibe apenas os sequenciamentos do gene COI considerados válidos.',
+  molecularDataDescription2:
+    'Todas as amostras que resultaram em erros de leitura, baixa qualidade de dados ou indícios de contaminação foram excluídas do conjunto final, garantindo a precisão da identificação molecular.',
+  viewSpreadsheet: 'Ver Planilha',
   aboutDataset: 'Sobre o Dataset',
   aboutDatasetDescription:
     'Este conjunto de dados contém imagens e metadados de espécimes de Elmidae coletados em vários locais do Paraná, Brasil. Todos os dados foram cuidadosamente curados e anotados para fins de aprendizado de máquina.',
